@@ -1,6 +1,6 @@
 <?php
 
-function tens(int $a){
+function units(int $a){
     if($a < 4){
         for($i = 0; $i < $a; $i++){
             return "I";
@@ -20,11 +20,25 @@ function tens(int $a){
     if($a == 9){
         return "IX";
     }
+}
+function tens($a){
+    echo "X";
     if(($a > 10) && ($a < 14)){
-        return "X";
         $b = $a - 10;
         for($i = 0; $i < $b; $i++){
-            return "I";
+            echo "I";
+        }
+    }
+    if(($a == 14)){
+        echo "IV";
+    }
+    if(($a > 14) && ($a < 19)){
+        $b = $a - 15;
+        echo "V";
+        for($i = 0; $i < $b; $i++){
+            echo "I";
         }
     }
 }
+
+echo tens(14);
