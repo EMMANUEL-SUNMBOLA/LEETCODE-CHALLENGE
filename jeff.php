@@ -41,4 +41,4 @@ function tens($a){
     }
 }
 
-echo tens(14);
+echo tens(14);//work in progress
