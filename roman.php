@@ -38,9 +38,9 @@ elseif(count($arr) == 2){
             }
         }
     }elseif($arr[0] == 4){
-        echo "LX";
+        echo "xL";
         $n = $num - 40;
-        if($num < 4){
+        if($n< 4){
             for ($i = 0; $i < $n; $i++){
                 echo "I";
             }
@@ -51,6 +51,28 @@ elseif(count($arr) == 2){
             $n2 = $n - 5;
             for($i = 0; $i < $n2; $i++){
                 echo "I";
+            }
+        }
+    }else if($arr[0] >= 5){
+        echo "L";
+        $n = $num - 50;
+        if($n< 4){
+            for ($i = 0; $i < $n; $i++){
+                echo "I";
+            }
+        }elseif($n == 4){
+            echo "IV";
+        }elseif(($n > 5) && ($n < 9)){
+            echo "V";
+            $n2 = $n - 5;
+            for($i = 0; $i < $n2; $i++){
+                echo "I";
+            }
+        }
+        
+        if($n >= 10){
+            for($i = 0; $i < floor($n/10); $i++){
+                echo "X";
             }
         }
     }
