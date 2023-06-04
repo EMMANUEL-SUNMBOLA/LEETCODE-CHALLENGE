@@ -82,6 +82,14 @@ elseif(count($arr) == 2){
                 for($i = 0; $i < $r; $i++){
                     echo "I";
                 }
+            }else if($r == 4){
+                echo "IV";
+            }else if(($r >= 5 ) && ($r < 9)){
+                echo "V";
+                $p = $r - 5;
+                for ($i = 0; $i < $p; $i++){
+                    echo "I";
+                }
             }
         }
     }
