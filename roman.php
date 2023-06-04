@@ -71,8 +71,17 @@ elseif(count($arr) == 2){
         }
         
         if($n >= 10){
-            for($i = 0; $i < floor($n/10); $i++){
+            $div = $n/10;
+            $flr = floor($div);
+            for($i = 0; $i < $flr; $i++){
                 echo "X";
+            }
+            $r = $div - $flr;
+            $r *= 10;
+            if($r < 4){
+                for($i = 0; $i < $r; $i++){
+                    echo "I";
+                }
             }
         }
     }
