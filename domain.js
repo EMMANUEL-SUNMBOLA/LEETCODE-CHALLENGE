@@ -15,4 +15,4 @@ function domainName(url){
     }
 }
 
-console.log(domainName("http://www.zombie-bites.com"));
+console.log(domainName("www.xakep.ru"));
