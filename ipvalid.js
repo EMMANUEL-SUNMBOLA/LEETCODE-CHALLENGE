@@ -4,7 +4,7 @@ function isValidIp(str){
     if((newStr.length === 4)){
         for(let i = 0; i < newStr.length; i++){
             let nums = parseInt(newStr[i]);
-            if((!Number.isNaN) && (nums > 0) && (nums < 225)){
+            if((!Number.isNaN) && (nums >= 0) && (nums <= 225)){
                 if((newStr[i].length > 1) && newStr[i].startsWith('0')){
                     return true;
                 }else{
